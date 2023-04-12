@@ -6,6 +6,7 @@ import { AiFillHeart } from "react-icons/ai";
 function Navigation() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   let name = "Hi Excellent";
+  const navigate = useNavigate();
   return (
     <Navbar >
       <Navbar.Brand href="#">RSUITE</Navbar.Brand>
@@ -21,7 +22,7 @@ function Navigation() {
         {!isLoggedIn?
           < >
             <Nav.Item onClick={()=> setIsLoggedIn(true)}>Login</Nav.Item>
-            <Nav.Item onClick={()=> setIsLoggedIn(true)} >Register</Nav.Item>
+            <Nav.Item onClick={()=> navigate('/register')} >Register</Nav.Item>
           </>
           :
           <> 

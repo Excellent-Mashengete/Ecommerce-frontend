@@ -5,6 +5,7 @@ import Address from './pages/Address';
 import Orders from './pages/Orders';
 import Personal from './pages/Personal';
 import Layout from './components/Layout';
+import Register from './components/RegisterForm';
 
 function Routers() {
   return (  
@@ -15,6 +16,8 @@ function Routers() {
             <Route path="address-book" element={<Address />} />
             <Route path="personal-details" element={<Personal />} />
         </Route>
+        
+        <Route path="register" element={<Register />} />
     </Routes>
   )
 }

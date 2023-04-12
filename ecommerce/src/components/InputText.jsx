@@ -2,7 +2,10 @@ import React from 'react'
 
 function inputText() {
   return (
-    <div>inputText</div>
+    <div>
+      <inputText  >
+      </inputText>
+    </div>
   )
 }
 
