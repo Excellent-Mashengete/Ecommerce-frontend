@@ -5,7 +5,7 @@ import { Container } from 'rsuite';
 function Products() {
     return (
         <Container>
-            <Navbar />
+            {/* <Navbar /> */}
         </Container>
     )
 }
