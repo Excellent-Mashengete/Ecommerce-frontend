@@ -6,6 +6,7 @@ import Orders from './pages/Orders';
 import Personal from './pages/Personal';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
+import LandingPage from './pages/LandingPage';
 
 function Routers() {
   return ( 
@@ -18,6 +19,8 @@ function Routers() {
           <Route path="address-book" element={<Address />} />
           <Route path="personal-details" element={<Personal />} />
         </Route>
+        <Route path="landing" element={<LandingPage />} />
+
       </Routes>
     </> 
   )

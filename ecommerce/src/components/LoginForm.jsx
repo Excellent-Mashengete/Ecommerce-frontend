@@ -4,9 +4,9 @@ import { Button, ButtonToolbar,  Form, FlexboxGrid } from 'rsuite';
 import { InputText } from './InputText';
 import { Model } from './ValidateRegister';
 
-function RegisterForm() {
+function LoginForm() {
   const formRef = React.useRef();
-  const [formValue, setFormValue] = React.useState({name: '', email: '', phone: '', password: '',  verifyPassword: ''});
+  const [formValue, setFormValue] = React.useState({email: '', password: ''});
 
   const handleSubmit = () => {
     if (!formRef.current.check()) {
@@ -20,11 +20,8 @@ function RegisterForm() {
     <FlexboxGrid justify='center'>
       <FlexboxGrid.Item colspan={12}>
         <Form fluid ref={formRef} onChange={setFormValue} formValue={formValue} model={Model}>
-          <InputText name="name" label="Name" />
           <InputText name="email" label="Email" />
-          <InputText name="phone" label="Phone" />
           <InputText name="password" label="Password" type="password" autoComplete="off" />
-          <InputText name="verifyPassword" label="Verify password" type="password" autoComplete="off" />
 
           <ButtonToolbar>
             <Button appearance="primary" onClick={handleSubmit}> Sign up </Button>                                
@@ -36,4 +33,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm
+export default LoginForm

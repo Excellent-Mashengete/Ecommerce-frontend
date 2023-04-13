@@ -4,11 +4,16 @@ import { Navbar, Nav, Dropdown, Avatar, Divider, Badge, Drawer, Button} from 'rs
 import { AiFillHeart, AiOutlineSearch, AiOutlineMenu, AiOutlineShoppingCart} from "react-icons/ai";
 import { HiShoppingCart } from "react-icons/hi";
 import SideNav from './SideNav';
+import AuthModal from '../pages/AuthModal';
 
 function Navigation() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [auth, setAuthenticate] = useState(false);
+  const [login, setLogin] = useState('Login');
   const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
   const navigate = useNavigate();
+
   let name = "Hi Excellent";
   let number = 0;
 
@@ -22,9 +27,9 @@ function Navigation() {
         <Nav pullRight className='navRight '>
           {!isLoggedIn?
             < >
-              <Nav.Item onClick={()=> setIsLoggedIn(true)}>Login</Nav.Item>
+              <Nav.Item onClick={()=> {setAuthenticate(true); setLogin('Login');}}>Login</Nav.Item>
           
-              <Nav.Item onClick={()=> setIsLoggedIn(true)} >Register</Nav.Item>
+              <Nav.Item onClick={()=> {setAuthenticate(true); setLogin('Register')}} >Register</Nav.Item>
             </>
             :
             <> 
@@ -50,6 +55,8 @@ function Navigation() {
             <Badge style={{ background: '#1c8644', fontSize:"0.8em"}} content={number}></Badge>
           </Avatar>
         </Nav>
+        
+        <AuthModal open={auth} access={login} handleClose={handleClose}/>
       </div>
 
       <div className='mobile'>

@@ -1,12 +1,13 @@
 import React from 'react'
+import { Form } from 'rsuite';
 
-function inputText() {
+export const InputText = React.forwardRef((props, ref) => {
+  const { name, label, accepter, ...rest } = props;
   return (
-    <div>
-      <inputText  >
-      </inputText>
-    </div>
+    <Form.Group controlId={`${name}-4`} ref={ref}>
+      <Form.ControlLabel>{label} </Form.ControlLabel>
+      <Form.Control name={name} accepter={accepter} {...rest} />
+    </Form.Group>
   )
-}
+});
 
-export default inputText
