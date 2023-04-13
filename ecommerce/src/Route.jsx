@@ -6,7 +6,7 @@ import Orders from './pages/Orders';
 import Personal from './pages/Personal';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/landingPage';
 
 function Routers() {
   return ( 
