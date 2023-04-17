@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, ButtonToolbar,  Form, FlexboxGrid } from 'rsuite';
-// import { BsPerson } from "react-icons/bs";
 import { InputText } from './InputText';
 import { Model } from './ValidateRegister';
 
@@ -17,8 +16,8 @@ function RegisterForm() {
   };
 
   return (
-    <FlexboxGrid justify='center'>
-      <FlexboxGrid.Item colspan={12}>
+    <FlexboxGrid >
+      <FlexboxGrid.Item colspan={24}>
         <Form fluid ref={formRef} onChange={setFormValue} formValue={formValue} model={Model}>
           <InputText name="name" label="Name" />
           <InputText name="email" label="Email" />

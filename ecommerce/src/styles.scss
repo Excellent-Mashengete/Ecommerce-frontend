@@ -25,6 +25,9 @@ body{
     background: none;
   }
 }
+.mybtn {
+  border-radius: 0%;
+}
 
 .layout {
   background: #ffffff;
@@ -34,6 +37,11 @@ body{
 
 .mobile{ 
   display: none;
+}
+.rs-sidenav li{
+  list-style: none;
+  border-top: 1px solid #e5e5ea;
+  padding: 20px;
 }
 
 @media screen and (min-width:767px) and (max-width: 991px){
@@ -53,6 +61,7 @@ body{
   .rs-container{
     padding: 2rem 1rem;
   }
+  
 }
 
 @media screen and (max-width:767px){
@@ -71,5 +80,8 @@ body{
   }
   .rs-container{
     padding: 2rem 1rem;
+  }
+  .rs-drawer-body{
+    padding: 20px 0px 20px 0px ;
   }
 }
