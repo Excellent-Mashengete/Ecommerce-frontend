@@ -28,62 +28,62 @@ console.log(sliderItems);
 
   <Row style={{ marginTop: '5vh', marginRight: '2.5vw', marginLeft: '2.5vw', flexWrap: 'wrap'}}>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden', height:'100%' }} bordered header="Women's dresses">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden', height:'100%' }} bordered header="Women's dresses">
             <Card />
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Tops">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Tops">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's shoes">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's shoes">
             <Card/> 
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's watches">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's watches">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's bags">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's bags">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden', height:'100%'}} bordered header="Women's jewellery">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden', height:'100%'}} bordered header="Women's jewellery">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's bags">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Women's bags">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's shoes">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's shoes">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's watches">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's watches">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's shirts">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Men's shirts">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Fragrances">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Fragrances">
             <Card/>
         </Panel>
     </Col>
     <Col md={6} sm={12} style={{ marginBottom: '1.5vh' }}>
-        <Panel style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Skincare">
+        <Panel className='colCircle' style={{wordWrap: 'break-word', overflow: 'hidden',height:'100%'}} bordered header="Skincare">
             <Card/>
         </Panel>
     </Col>
