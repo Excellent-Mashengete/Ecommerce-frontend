@@ -7,6 +7,7 @@ import Personal from './pages/Personal';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
 import LandingPage from './pages/landingPage';
+import Category from './pages/Category';
 
 function Routers() {
   return ( 
@@ -20,6 +21,7 @@ function Routers() {
           <Route path="personal-details" element={<Personal />} />
         </Route>
         <Route path="landing" element={<LandingPage />} />
+        <Route path="category" element={<Category />} />
 
       </Routes>
     </> 

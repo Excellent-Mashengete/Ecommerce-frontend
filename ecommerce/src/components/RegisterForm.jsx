@@ -26,6 +26,7 @@ function RegisterForm() {
           <InputText name="password" label="Password" type="password" autoComplete="off" />
           <InputText name="verifyPassword" label="Verify password" type="password" autoComplete="off" />
 
+
           <ButtonToolbar>
             <Button appearance="primary" onClick={handleSubmit}> Sign up </Button>                                
           </ButtonToolbar>

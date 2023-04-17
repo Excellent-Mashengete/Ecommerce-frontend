@@ -73,3 +73,9 @@ body{
     padding: 2rem 1rem;
   }
 }
+
+@media (max-width: 767px) {
+  .card-mobile {
+    border-radius: 50%;
+  }
+}
