@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container } from 'rsuite'
+import { Button, Container } from 'rsuite'
 import Mybutton from './Button';
 
 function EditPersonal(props) {
-    const {name, detail} = props;
+    const {name, detail, mybtn, block, handle, appearance, label} = props;
     return (
         <div className='editUser'>
             <div className='content'>
@@ -13,7 +13,7 @@ function EditPersonal(props) {
                         <p>{detail}</p>
                     </div>
                     <div className='flexBtn'>
-                        <Mybutton label={'Edit'} appearance={'primary'} mybtn={'shopping_button'} block={false} />
+                        <Button className={mybtn} block={block} onClick={handle} appearance={appearance}>{label}</Button>
                     </div>
                 </div>
         
