@@ -10,13 +10,12 @@ body{
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f7fa;
 }
-// .rs-container{
-//   padding: 1rem 4.2rem;
-// }
-// .heading{
-//   padding: 0rem 0rem 1rem 0rem;
-// }
-
+.rs-container{
+  padding: 1rem 4.2rem;
+}
+.heading{
+  padding: 0rem 0rem 1rem 0rem;
+}
 
 .rs-navbar {
   background: #ffffff;
@@ -33,10 +32,25 @@ body{
   border-radius: 0%;
 }
 
+//White box on order, personal details, cart ...
 .layout {
   background: #ffffff;
   box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
   justify-content: space-evenly;
+}
+
+//
+.editUser{
+  background: #ffffff;
+  height: 12vh;
+  box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
+  justify-content: space-evenly;
+  margin: 0px 0px 10px 0px;
+  .design{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 // for empty orders and cart
@@ -91,7 +105,6 @@ body{
   }
 }
 
-
 .mobile{ 
   display: none;
 }
@@ -142,12 +155,12 @@ body{
   .navbar{
     display: none;
   }
-  // .rs-container{
-  //   padding: 1rem 1rem;
-  // } 
-  // .heading, .content{
-  //   padding: 0rem 1rem 1.5rem 1rem;
-  // }
+  .rs-container{
+    padding: 1rem 1rem;
+  } 
+  .heading{
+    padding: 0rem 0rem 1.5rem 0rem;
+  }
 
   .cart{
     .content{
@@ -202,6 +215,7 @@ body{
       right: -16em;
     }
   }
+
   .navbar{
     display: none;
   }
@@ -214,6 +228,7 @@ body{
   .rs-drawer-body{
     padding: 20px 0px 20px 0px ;
   }
+
   .card-mobile {
     border-radius: 50%;
   }

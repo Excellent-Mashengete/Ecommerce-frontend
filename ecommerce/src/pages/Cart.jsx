@@ -7,7 +7,7 @@ function Cart() {
     let number = 0;
 
     return (
-        <Container className=''>           
+        <Container>           
             <Container >
                 <div className='heading'>
                     <h5>Shopping Cart</h5>
