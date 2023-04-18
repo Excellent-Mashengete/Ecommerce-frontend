@@ -25,6 +25,7 @@ body{
     background: none;
   }
 }
+
 .mybtn {
   border-radius: 0%;
 }
@@ -38,11 +39,41 @@ body{
 .mobile{ 
   display: none;
 }
-.rs-sidenav li{
-  list-style: none;
-  border-top: 1px solid #e5e5ea;
-  padding: 20px;
+
+.rs-drawer-content {
+  background-color: #f7f7fa;
+  .rs-sidenav-body{
+    ul{
+      margin: 0px !important;
+      padding: 0px 0px 5px 0px !important;
+    }
+
+    ul:hover{
+      background-color: #eeee;
+      color: #0000ff;
+    }
+    ul a:hover, ul a:active{
+      color: #0000ff !important;
+    }
+    .rs-sidenav-nav {
+      list-style: none;
+      border-bottom: 1px solid #0000ff;
+      width: 100%;
+    }
+    .rs-navbar-item{
+      margin-left: 10px  !important;
+      height: 0.1rem !important;
+    }
+  
+
+
+  }
 }
+
+.rs-modal-dialog{
+  width: 35vw;
+}
+
 
 @media screen and (min-width:767px) and (max-width: 991px){
   .mobile{
@@ -84,4 +115,9 @@ body{
   .rs-drawer-body{
     padding: 20px 0px 20px 0px ;
   }
+  .card-mobile {
+    border-radius: 50%;
+  }
 }
+
+  

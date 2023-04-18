@@ -1,54 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Sidenav, Nav, Navbar} from 'rsuite';
+import { useNavigate } from 'react-router-dom';
+import HomeIcon from '@rsuite/icons/legacy/Home';
+import CogIcon from '@rsuite/icons/legacy/Cog';
 
-import { Sidenav, Nav, Divider } from 'rsuite';
-import DashboardIcon from '@rsuite/icons/legacy/Dashboard';
-import GroupIcon from '@rsuite/icons/legacy/Group';
-import MagicIcon from '@rsuite/icons/legacy/Magic';
-import GearCircleIcon from '@rsuite/icons/legacy/GearCircle';
-import { NavLink } from 'react-router-dom';
+const Item = ({ title, eventKey, to, onSelect, activeKey, ...props }) => {
+  const navigate = useNavigate();
 
-const headerStyles = {
-  padding: 20,
-  fontSize: 16,
-  background: '#34c3ff',
-  color: ' #fff'
-};
-
-
-const Item = ({ title, to }) => {
-  let activeClassName = "navlink";
   return (
-      <NavLink to={to} >{title}</NavLink>
+    <Nav onSelect={onSelect} activeKey={activeKey} onClick={()=> navigate(to)}>
+      <Nav.Item eventKey={eventKey} onClick={()=> navigate(to)} >{title}</Nav.Item>
+    </Nav>
   );
 };
 
 
 function SideNav() {
+  const [activeKey, setActiveKey] = useState(null);
+  console.log(activeKey);
   return (
-    <div>
-      <Sidenav defaultOpenKeys={['3', '4']}>
-        <Sidenav.Header>
-          <div style={headerStyles}>Custom Sidenav</div>
-        </Sidenav.Header>
-        
-        <Sidenav.Body>
-          <li>
-              <Item title="Orders" to="/account/orders" />
-          </li>
-            <li>
-                <Item title="Personal Details" to="/account/personal-details"/>
-            </li>
+    <Sidenav>    
+      <Sidenav.Body>
+        <Item title="Home" eventKey="1" to="/" activeKey={activeKey} onSelect={setActiveKey} /> 
+        <Item title="Orders" eventKey="2" to="/account/orders" activeKey={activeKey} onSelect={setActiveKey} />
+        <Item title="Personal Details" eventKey="3" to="/account/personal-details" activeKey={activeKey} onSelect={setActiveKey} />
+        <Item title="Address Book" eventKey="4" to="/account/address-book" activeKey={activeKey} onSelect={setActiveKey}/>
+      </Sidenav.Body>
+    </Sidenav>
 
-            <li>
-                <Item title="Address Book" to="/account/address-book"/>
-            </li>
-
-            <li>
-                <Item title="Dashboard" to="/client/Pay"/>
-            </li>
-        </Sidenav.Body>
-      </Sidenav>
-    </div>
+    
   )
 }
 

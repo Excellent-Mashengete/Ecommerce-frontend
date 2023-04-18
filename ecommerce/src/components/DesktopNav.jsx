@@ -37,11 +37,11 @@ function DesktopNav(props) {
                     <Nav.Item onClick={()=> navigate('/account/address-book')} >Address Book</Nav.Item>
                 </Nav.Menu>
 
-                <Avatar size="sm" circle style={{ background: '#ff8787', marginTop:'12px', marginRight:'12px'  }} >
+                <Avatar onClick={()=> navigate('/account/wishlist')} size="sm" circle style={{ background: '#ff8787', cursor: "pointer", marginTop:'12px', marginRight:'12px'  }} >
                     <AiFillHeart style={{ color: 'white',fontSize:"1.3em" }}/>
                 </Avatar>
 
-                <Avatar style={{ background: '#1c8644', marginTop:'12px', marginRight:"5px", width: '60px', borderRadius:'50px',height: '30px'  }} >
+                <Avatar onClick={()=> navigate('/cart')} style={{ background: '#1c8644',cursor: "pointer", marginTop:'12px', marginRight:"5px", width: '60px', borderRadius:'50px',height: '30px'  }} >
                     <HiShoppingCart style={{ color: 'white', fontSize:"1.2em"}}/>
                     <Badge style={{ background: '#1c8644', fontSize:"0.8em"}} content={number}></Badge>
                 </Avatar>

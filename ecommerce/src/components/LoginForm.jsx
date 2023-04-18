@@ -16,7 +16,7 @@ function LoginForm(props) {
   const setAuthReg = () => {
     // setAuthenticate(true);
     setLogin('Register');
-    access="Register"
+
   }
 
   const formRef = React.useRef();
