@@ -1,10 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, Avatar, Badge} from 'rsuite';
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineShoppingCart} from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 import SideDrawer from './Drawer';
 
 function MobileNav(props) {
-    const {number, setOpen, open, handleCloseSidenav} = props;  
+    const {number, setOpen, open, handleCloseSidenav} = props;
+    const navigate = useNavigate();  
     return (
         <div className='mobile'>
             <Nav className='navRight '>
@@ -22,7 +24,7 @@ function MobileNav(props) {
                     <AiOutlineSearch style={{ color:"black", fontSize:"1.5em"  }}  />
                 </Avatar>
 
-                <Badge content={number}>
+                <Badge onClick={()=> navigate('/cart')} content={number}>
                     <Avatar size="md" style={{ marginTop:'8px', background:'transparent'  }} >
                     <AiOutlineShoppingCart style={{ color:"black", fontSize:"1.5em"  }}  />
                     </Avatar>

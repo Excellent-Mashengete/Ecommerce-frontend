@@ -10,16 +10,19 @@ body{
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f7fa;
 }
-.rs-container{
-  padding: 2rem 5rem;
-}
+// .rs-container{
+//   padding: 1rem 4.2rem;
+// }
+// .heading{
+//   padding: 0rem 0rem 1rem 0rem;
+// }
+
 
 .rs-navbar {
   background: #ffffff;
   box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
-
   .navbar{
-    padding: 0rem 8rem;
+    padding: 0rem 7rem;
   }
   a.rs-navbar-item active{
     background: none;
@@ -35,6 +38,59 @@ body{
   box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
   justify-content: space-evenly;
 }
+
+// for empty orders and cart
+.cart{
+  height: 55vh;
+  .content{
+    padding: 2rem 2rem;
+    height: 100%;
+  }
+  .center_empty{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    p{
+      font-size: 1.2rem;
+      margin-top: 8px;
+    }
+    .shopping_button{
+      width: 10rem;
+      border-radius: 0%;
+      margin-top: 1rem;
+    } 
+  }
+  .shopping{
+    .center_empty{
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 35%;
+      transform: translateY(-50%);
+      p{
+        font-size: 1.2rem;
+        margin-top: 8px;
+      }
+      .shopping_button{
+        width: 10rem;
+        border-radius: 0%;
+        margin-top: 1rem;
+      } 
+    }
+  }
+  .empty_box{
+    border: 4px solid #fff;
+    border-radius: 75px;
+    box-shadow: 0 4px 8px 0 rgba(77,77,79,0.08), 0 2px 4px 0 rgba(77,77,79,0.16);
+    margin: 0 0 24px;
+    width: 130px;
+  }
+}
+
 
 .mobile{ 
   display: none;
@@ -64,9 +120,6 @@ body{
       margin-left: 10px  !important;
       height: 0.1rem !important;
     }
-  
-
-
   }
 }
 
@@ -74,11 +127,11 @@ body{
   width: 35vw;
 }
 
-
+//Tablets
 @media screen and (min-width:767px) and (max-width: 991px){
   .mobile{
     display: block;
-    padding: 0rem 1rem !important;
+    padding: 0rem 2rem !important;
     .rs-badge-wrapper .rs-badge-content {
       top:10px !important;
     }
@@ -89,12 +142,55 @@ body{
   .navbar{
     display: none;
   }
-  .rs-container{
-    padding: 2rem 1rem;
+  // .rs-container{
+  //   padding: 1rem 1rem;
+  // } 
+  // .heading, .content{
+  //   padding: 0rem 1rem 1.5rem 1rem;
+  // }
+
+  .cart{
+    .content{
+      padding: 2rem 2rem;
+      height: 100%;
+    }
+    p{
+      font-size: 1.8rem;
+      margin-top: 8px;
+    }
+    .empty_box{
+      border: 6px solid #fff;
+      border-radius: 60px;
+      width: 120px;
+    }
+    .shopping{
+      .center_empty{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        transform: translateY(-50%);
+        p{
+          font-size: 1.2rem;
+          margin-top: 8px;
+        }
+        .shopping_button{
+          width: 15rem;
+          border-radius: 0%;
+          margin-top: 1rem;
+        } 
+      }
+    }
+    .center_empty{
+      .shopping_button{
+        width: 15rem;
+      } 
+    }
   }
-  
 }
 
+//Mobiles
 @media screen and (max-width:767px){
   .mobile{
     display: block;
@@ -110,13 +206,57 @@ body{
     display: none;
   }
   .rs-container{
-    padding: 2rem 1rem;
+    padding: 1rem 0rem; 
+  }
+  .heading{
+    padding: 0rem 1rem 1rem 1rem;
   }
   .rs-drawer-body{
     padding: 20px 0px 20px 0px ;
   }
   .card-mobile {
     border-radius: 50%;
+  }
+
+  .cart{
+    height: 55vh;
+    .content{
+      padding: 2rem 2rem;
+      height: 100%;
+    }
+    p{
+      font-size: 1.8rem;
+      margin-top: 8px;
+    }
+    .empty_box{
+      border: 6px solid #fff;
+      border-radius: 60px;
+      width: 120px;
+    }
+    .shopping{
+      .center_empty{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45%;
+        transform: translateY(-50%);
+        p{
+          font-size: 1.2rem;
+          margin-top: 8px;
+        }
+        .shopping_button{
+          width: 20rem;
+          border-radius: 0%;
+          margin-top: 1rem;
+        } 
+      }
+    }
+    .center_empty{
+      .shopping_button{
+        width: 20rem;
+      } 
+    }
   }
 }
 

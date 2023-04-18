@@ -6,15 +6,7 @@ import SideNav from './SideNav';
 function Layout() {
     return (
         <Container>           
-            <Container className='flow' >
-                <Col xsHidden smHidden mdHidden >
-                    <Breadcrumb>
-                        <Breadcrumb.Item> My Account</Breadcrumb.Item>
-                        <Breadcrumb.Item >Components</Breadcrumb.Item>
-                    </Breadcrumb>
-
-                </Col>
-             
+            <Container >
                 <FlexboxGrid    >
                     <FlexboxGrid.Item as={Col} colspan={24} >
                         <Row className="show-grid" gutter={24} >
@@ -28,7 +20,7 @@ function Layout() {
                                 <Content>Content</Content>
                             </Col>
 
-                            <Col xs={24} sm={24} md={24} lg={19} className="layout">
+                            <Col xs={24} sm={24} md={24} lg={19}>
                                 <Outlet/>  
                             </Col>
                         </Row>
