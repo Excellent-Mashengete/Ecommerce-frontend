@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Drawer } from 'rsuite';
 import SideNav from './SideNav';
 

@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ButtonToolbar,  Form, FlexboxGrid, Row, Divider } from 'rsuite';
 import { InputText } from './InputText';
 import { Model } from './ValidateRegister';
 import Mybutton from './Button';
-import AuthModal from '../pages/AuthModal';
 
-function LoginForm(props) {
-  const { Close, access } = props;
-  
-  const [login, setLogin] = useState('Login');
-  const handleClose = () => setAuthenticate(false);
-  const [auth, setAuthenticate] = useState(false);
-
-  //Authentication Modal
-  const setAuthReg = () => {
-    // setAuthenticate(true);
-    setLogin('Register');
-
-  }
-
+function LoginForm() {
   const formRef = React.useRef();
   const [formValue, setFormValue] = React.useState({email: '', password: ''});
 
@@ -31,8 +17,7 @@ function LoginForm(props) {
   };
 
   const HandleRegister = () => {
-    Close();
-    setAuthReg();
+    console.log('Close login form and open register'); 
   }
 
   return (
@@ -45,7 +30,7 @@ function LoginForm(props) {
 
             <ButtonToolbar>
               <Row>
-              <Mybutton handle={handleSubmit} label={'Forgot Password?'} appearance={'link'} block={false} /> 
+                <Mybutton handle={handleSubmit} label={'Forgot Password?'} appearance={'link'} block={false} /> 
               </Row>
             
               <Mybutton handle={handleSubmit} label={'Sign in'} appearance={'primary'} mybtn={'mybtn'} block={true} />  
@@ -62,7 +47,6 @@ function LoginForm(props) {
           </Form>
         </FlexboxGrid.Item>
       </FlexboxGrid>
-      <AuthModal open={auth} access={login} />
     </>
   );
 }

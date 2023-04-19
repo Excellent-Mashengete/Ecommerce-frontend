@@ -1,7 +1,8 @@
 import React from 'react'
 import { Carousel , Row , Col , Panel} from 'rsuite';
 import Card from '../components/Card';
-import { sliderItems } from '../data';
+import { sliderItems } from '../Data/data';
+
 
 
 function landingPage() {

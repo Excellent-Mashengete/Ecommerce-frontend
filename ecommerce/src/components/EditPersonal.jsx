@@ -1,11 +1,10 @@
-import React from 'react'
-import { Button, Container } from 'rsuite'
-import Mybutton from './Button';
+import React from 'react';
+import { Button } from 'rsuite';
 
 function EditPersonal(props) {
-    const {name, detail, mybtn, block, handle, appearance, label} = props;
+    const {name, detail, mybtn, block, eventKey, onSelect, handle, appearance, label} = props;
     return (
-        <div className='editUser'>
+        <div className='editUser' onClick={()=>onSelect(eventKey)}>
             <div className='content'>
                 <div className='design'>
                     <div>

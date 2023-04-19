@@ -27,7 +27,7 @@ function RegisterForm() {
 
 
           <ButtonToolbar>
-            <Button appearance="primary" onClick={handleSubmit}> Sign up </Button>                                
+            <Button appearance="primary" onClick={handleSubmit} block={true}> Sign up </Button>                                
           </ButtonToolbar>
 
         </Form>

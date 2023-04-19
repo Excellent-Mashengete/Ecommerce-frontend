@@ -16,7 +16,6 @@ body{
 .heading{
   padding: 0rem 0rem 1rem 0rem;
 }
-
 .rs-navbar {
   background: #ffffff;
   box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
@@ -31,7 +30,10 @@ body{
 .mybtn {
   border-radius: 0%;
 }
-
+.label-large{
+  font-size: x-large;
+  font-weight: 500;
+}
 //White box on order, personal details, cart ...
 .layout {
   background: #ffffff;
@@ -39,21 +41,56 @@ body{
   justify-content: space-evenly;
 }
 
-//
-.editUser{
-  background: #ffffff;
-  height: 12vh;
-  box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
-  justify-content: space-evenly;
-  margin: 0px 0px 10px 0px;
-  .design{
+//view Edit personal details
+.personal{
+  .content{
+    padding: 2rem 2rem;
+    height: 100%;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    align-items: center;
   }
-  .editbtn{
-    border-radius: 0%;
-    width: 10rem;
+  .editUser{
+    background: #ffffff;
+    height: 12vh;
+    box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28); 
+    margin: 0px 0px 10px 0px;
+    .design{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      h6{
+        font-weight: bolder;
+      }
+    }
+    .editbtn{
+      border-radius: 0%;
+      width: 8rem;
+    }
+  }
+}
+
+//Edit personal details
+.personal{
+  .contents{
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .editdetails{
+    background: #ffffff;
+    box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
+    margin: 0px 0px 10px 0px;
+    .userDetails{
+      width: 100%;
+      .endbtn{
+        justify-content: end;
+        .editbtn{
+          border-radius: 0%;
+          width: 8rem;
+        }
+      }
+    }
   }
 }
 
@@ -63,14 +100,22 @@ body{
   .content{
     padding: 2rem 2rem;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
   .center_empty{
     text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 50%;
+    // transform: translateY(-50%);
     p{
       font-size: 1.2rem;
       margin-top: 8px;
@@ -84,11 +129,15 @@ body{
   .shopping{
     .center_empty{
       text-align: center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 35%;
-      transform: translateY(-50%);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      // position: absolute;
+      // left: 0;
+      // right: 0;
+      // top: 45%;
+      // transform: translateY(-50%);
       p{
         font-size: 1.2rem;
         margin-top: 8px;
@@ -205,6 +254,32 @@ body{
       } 
     }
   }
+  //view Edit personal details
+  .personal{
+    .content{
+      padding: 2rem 2rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .editUser{
+      background: #ffffff;
+      height: 12vh;
+      box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);
+      
+      margin: 0px 0px 10px 0px;
+      .design{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .editbtn{
+        border-radius: 0%;
+        width: 8rem;
+      }
+    }
+  }
 }
 
 //Mobiles
@@ -219,7 +294,6 @@ body{
       right: -16em;
     }
   }
-
   .navbar{
     display: none;
   }
@@ -232,11 +306,9 @@ body{
   .rs-drawer-body{
     padding: 20px 0px 20px 0px ;
   }
-
   .card-mobile {
     border-radius: 50%;
   }
-
   .cart{
     height: 55vh;
     .content{
@@ -275,6 +347,35 @@ body{
       .shopping_button{
         width: 20rem;
       } 
+    }
+  }
+  .personal{
+    .content{
+      padding: 2rem 2rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .editUser{
+      background: #ffffff;
+      height: 12vh;
+      box-shadow: 0 0.1em 0.5em 0 rgba(0, 0, 0, 0.28);  
+      margin: 0px 0px 1px 0px;
+      .design{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .editbtn{
+        border-radius: 0%;
+        width: 5rem;
+        border: none;
+        background-color: unset;
+        color: #0000ff;
+        justify-content: end;
+        font-size: large;
+      }
     }
   }
 }

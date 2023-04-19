@@ -8,11 +8,11 @@ function AuthModal(props) {
   return (
     <Modal open={open} keyboard={false} onClose={handleClose}>
       <Modal.Header>
-        <Modal.Title>{access }</Modal.Title>
+        <Modal.Title  className='label-large'>{access }</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        {access === 'Login'? <LoginForm Close={handleClose} access={access} /> : <RegisterForm />}      
+        {access === 'Login'? <LoginForm /> : <RegisterForm />}      
       </Modal.Body>
 
       <Modal.Footer>

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AiFillHeart} from "react-icons/ai";
 import { HiShoppingCart } from "react-icons/hi";
-import { Navbar, Nav, Dropdown, Avatar, Badge} from 'rsuite';
+import { Navbar, Nav, Avatar, Badge} from 'rsuite';
 import AuthModal from '../pages/AuthModal';
 
 function DesktopNav(props) {
